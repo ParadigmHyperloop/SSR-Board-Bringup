@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7701C08A1F737E8C00BB1D6F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7701C0891F737E8C00BB1D6F /* main.c */; };
+		7701C0981F737F3100BB1D6F /* i2cfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 7701C0961F737F3100BB1D6F /* i2cfunc.c */; };
+		777A7AF51F954BE7005697D6 /* ssr.c in Sources */ = {isa = PBXBuildFile; fileRef = 777A7AF31F954BE7005697D6 /* ssr.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,12 @@
 /* Begin PBXFileReference section */
 		7701C0861F737E8C00BB1D6F /* SSR-Board-Interface */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SSR-Board-Interface"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7701C0891F737E8C00BB1D6F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7701C0901F737ED400BB1D6F /* ssr_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssr_server.c; sourceTree = "<group>"; };
+		7701C0941F737F0000BB1D6F /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
+		7701C0961F737F3100BB1D6F /* i2cfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = i2cfunc.c; sourceTree = "<group>"; };
+		7701C0971F737F3100BB1D6F /* i2cfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = i2cfunc.h; sourceTree = "<group>"; };
+		777A7AF31F954BE7005697D6 /* ssr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ssr.c; sourceTree = "<group>"; };
+		777A7AF41F954BE7005697D6 /* ssr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ssr.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				7701C0891F737E8C00BB1D6F /* main.c */,
+				7701C0961F737F3100BB1D6F /* i2cfunc.c */,
+				7701C0971F737F3100BB1D6F /* i2cfunc.h */,
+				7701C0901F737ED400BB1D6F /* ssr_server.c */,
+				7701C0941F737F0000BB1D6F /* init.c */,
+				777A7AF31F954BE7005697D6 /* ssr.c */,
+				777A7AF41F954BE7005697D6 /* ssr.h */,
 			);
 			path = "SSR-Board-Interface";
 			sourceTree = "<group>";
@@ -119,7 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777A7AF51F954BE7005697D6 /* ssr.c in Sources */,
 				7701C08A1F737E8C00BB1D6F /* main.c in Sources */,
+				7701C0981F737F3100BB1D6F /* i2cfunc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +264,7 @@
 				7701C08F1F737E8C00BB1D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
